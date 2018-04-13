@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Transfert</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngIf="property.id">
+        <ion-card-content>
+            <h2 class="card-title">{{property.title}}</h2>
+            <p>{{property.address}}, {{property.city}} {{property.state}}</p>
+        </ion-card-content>
+        <ion-list>
+
+            <ion-item>
+                <ion-icon item-left name="moon"></ion-icon>
+                <h3>titre</h3>
+                <ion-note item-right>{{property.title}}</ion-note>
+            </ion-item>
+            <ion-item>
+                <ion-icon item-left name="leaf"></ion-icon>
+                <h3>city</h3>
+                <ion-note item-right>{{property.city}}</ion-note>
+            </ion-item>
+            <ion-item>
+                <ion-icon item-left name="pricetag"></ion-icon>
+                <h3>Montant</h3>
+                <ion-note item-right>{{property.price}}</ion-note>
+            </ion-item>
+        </ion-list>
+
+        <ion-item>
+            <button ion-button icon-left (click)="favorite(property)" clear item-left>
+                <ion-icon name="star"></ion-icon>
+                valide
+            </button>
+          
+        </ion-item>
+
+    </ion-card>
+</ion-content>
