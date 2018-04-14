@@ -24875,3 +24875,7 @@ page-welcome ion-slide img {
 page-welcome .swiper-pagination-bullet {
   background: white;
 }
+
+page-welcome .item {
+  background-color: transparent;
+}
