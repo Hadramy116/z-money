@@ -1,8 +1,8 @@
 {
-  "name": "dreamhouse",
+  "name": "zein",
   "version": "0.0.0",
-  "author": "Christophe Coenraets",
-  "homepage": "http://coenraets.org/",
+  "author": "Lala & Mima",
+  "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -50,5 +50,5 @@
       "locator": "ios"
     }
   ],
-  "description": "dreamhouse sample app"
+  "description": "Zein Money transfer"
 }
