@@ -19,32 +19,28 @@
 
     <ion-card>
         <ion-card-header>
-         Saisir tranfert info
+         Saisir transaction info
         </ion-card-header>
       
         <ion-list>
-            <ion-item>
-              <ion-label>Agence</ion-label>
-              <ion-select [(ngModel)]="gaming">
-                <ion-option value="nes">Atar</ion-option>
-                <ion-option value="n64">lksar</ion-option>
-                <ion-option value="ps">Any</ion-option>
-              </ion-select>
+           <ion-item>
+              <ion-label color="primary">Num de CmptS</ion-label>
+              <ion-input placeholder=" Num de compte sender"></ion-input>
             </ion-item>
             <ion-item>
-              <ion-label color="primary">Sender</ion-label>
-              <ion-input placeholder="sender name"></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-label color="primary">Receiver</ion-label>
-              <ion-input placeholder="Receiver name"></ion-input>
+              <ion-label color="primary">Num de CmptR</ion-label>
+              <ion-input placeholder="Num de compte Receiver "></ion-input>
             </ion-item>
             <ion-item>
               <ion-label color="primary">Montant</ion-label>
               <ion-input placeholder="montant"></ion-input>
             </ion-item>
             <ion-item>
-                <button ion-button round (click)="presentAlert()">Envoi</button>
+                <ion-label color="primary">Description</ion-label>
+                <ion-input placeholder="Description"></ion-input>
+              </ion-item>
+            <ion-item>
+                <button ion-button round (click)="presentAlert()"><ion-icon name="md-paper-plane" ></ion-icon></button>
             </ion-item>
           </ion-list>
       </ion-card>

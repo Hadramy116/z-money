@@ -8,13 +8,19 @@ import {WelcomePage} from '../pages/welcome/welcome';
 import {AboutPage} from '../pages/about/about';
 
 import {TransfertService} from "../providers/transfert-service-mock";
-
+import { LoginPage} from '../pages/login/login';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { TransfertListPage } from '../pages/transfert-list/transfert-list';
 import { TransfertDetailPage } from '../pages/transfert-detail/transfert-detail';
 import { ValidationListPage } from '../pages/validation-list/validation-list';
 import { SendMoneyPage } from '../pages/send-money/send-money';
+import {MapPage} from '../pages/map/map';
+import {ValidationPage} from '../pages/validation/validation';
+import {NotificationPage} from '../pages/notification/notification';
+import {MessagePage} from '../pages/message/message';
+import {ProfilePage} from '../pages/profile/profile';
+
 
 @NgModule({
   declarations: [
@@ -24,6 +30,12 @@ import { SendMoneyPage } from '../pages/send-money/send-money';
     TransfertListPage,
     TransfertDetailPage,
     SendMoneyPage,
+    LoginPage,
+    MapPage,
+    ValidationPage,
+    NotificationPage,
+    ProfilePage,
+    MessagePage,
     ValidationListPage
   ],
   imports: [
@@ -39,6 +51,12 @@ import { SendMoneyPage } from '../pages/send-money/send-money';
     TransfertListPage,
     TransfertDetailPage,
     SendMoneyPage,
+    LoginPage,
+    MapPage,
+    ValidationPage,   
+    NotificationPage,
+    MessagePage,
+    ProfilePage,
     ValidationListPage
   ],
   providers: [

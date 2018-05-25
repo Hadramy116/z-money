@@ -1,0 +1,84 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<style type="text/css">
+::-webkit-input-placeholder{
+  color: white !important;
+}
+:-moz-placeholder{
+  color:white !important;
+}
+:-ms-placeholder{
+  color: white !important;
+}
+</style>
+
+
+
+<ion-header>
+
+ 
+
+</ion-header>
+
+
+<ion-content padding style=" background-color:rgb(203, 227, 236) ;background-size:100% 100%">
+
+
+
+<ion-grid>
+
+  <ion-row>
+    <ion-col col-4>
+      <ion-col col-4 styl="margin-left:auto ;margin-right :auto;display:block;">
+        <img scr="url('assets/img/b.png')" style="width:100%;height:auto;
+        border-radius:100%"> 
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+
+    <ion-slides>
+
+        <ion-slide>
+            <ion-list   >
+                    <ion-item class="item"style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">
+                      
+                      <ion-input type="email"  placeholder="Email"></ion-input>
+                    </ion-item>
+                    
+                    <ion-item class="item" style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">
+                      
+                      <ion-input type="password" placeholder="password"></ion-input>
+                    </ion-item>      
+                  
+                    <ion-row>
+                      <ion-col text-center>
+                        <button style="margin-top:15px ;height:35px;font-size:14px;background:#10ABF4;" ion-button  (click)="login()">
+                            Connecter
+                        </button>
+                      </ion-col>
+                    </ion-row>  
+            </ion-list>
+
+        </ion-slide>
+      </ion-slides>
+
+      <ion-fab bottom right >
+          <button ion-fab color="primary" ><ion-icon name="add"></ion-icon></button>
+          
+          <ion-fab-list side="top" >
+            <button ion-fab><ion-icon name="md-map"></ion-icon></button>
+            <button ion-fab ><ion-icon name="md-mail"></ion-icon></button>
+            
+          </ion-fab-list>
+        </ion-fab>
+
+</ion-content>

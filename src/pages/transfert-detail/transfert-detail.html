@@ -7,32 +7,33 @@
 <ion-content>
     <ion-card *ngIf="property.id">
         <ion-card-content>
-            <h2 class="card-title">{{property.title}}</h2>
-            <p>{{property.address}}, {{property.city}} {{property.state}}</p>
+            <h2 class="card-title">Detail de transaction </h2>
+            
         </ion-card-content>
         <ion-list>
 
             <ion-item>
                 <ion-icon item-left name="moon"></ion-icon>
-                <h3>titre</h3>
+                <h3>Descripition</h3>
                 <ion-note item-right>{{property.title}}</ion-note>
             </ion-item>
+            
             <ion-item>
-                <ion-icon item-left name="leaf"></ion-icon>
-                <h3>city</h3>
-                <ion-note item-right>{{property.city}}</ion-note>
-            </ion-item>
-            <ion-item>
-                <ion-icon item-left name="pricetag"></ion-icon>
+                <ion-icon item-left name="md-cash"></ion-icon>
                 <h3>Montant</h3>
                 <ion-note item-right>{{property.price}}</ion-note>
             </ion-item>
+            <ion-item>
+                   <ion-icon item-left name="md-clock"></ion-icon>
+                    <h3>Date </h3>
+                    <ion-note item-right>20/05/2018 ,12:27 </ion-note>
+                </ion-item>
         </ion-list>
 
         <ion-item>
             <button ion-button icon-left (click)="favorite(property)" clear item-left>
-                <ion-icon name="star"></ion-icon>
-                valide
+                <ion-icon name="md-checkmark"></ion-icon>
+                envoyer
             </button>
           
         </ion-item>

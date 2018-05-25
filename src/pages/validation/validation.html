@@ -1,0 +1,62 @@
+<!--
+  Generated template for the ValidationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>validation</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <ion-card>
+        <ion-card-header>
+          Transaction  info
+        </ion-card-header>
+      
+        <ion-list>
+            <ion-item>
+              <ion-label color="primary">Num CmptD</ion-label>
+              <ion-label >0035</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label color="primary"> description d'argent</ion-label>
+              <ion-label >Sidi vers Ali</ion-label>
+            </ion-item>
+            <ion-item>
+                <ion-label color="primary">Montant</ion-label>
+                <ion-label >20000 Un</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-card>
+          <ion-card>
+              <ion-card-header>
+               Saisir Validation info
+              </ion-card-header>
+            <ion-list>
+                <ion-item>
+                  <ion-label color="primary">INN </ion-label>
+                  <ion-input placeholder="INN de destinataire"></ion-input>
+                </ion-item>
+                   <ion-item>
+                <button ion-button round (click)="presentAlert()">Valider</button>
+            </ion-item>
+                </ion-list>
+            
+
+         
+      </ion-card>
+
+</ion-content>
+
+
+
