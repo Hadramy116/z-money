@@ -9,11 +9,11 @@ import { TransfertListPage } from '../pages/transfert-list/transfert-list';
 import { ValidationListPage } from '../pages/validation-list/validation-list';
 import { SendMoneyPage } from '../pages/send-money/send-money';
 import { LoginPage} from '../pages/login/login';
-import {MapPage } from '../pages/map/map';
-import {ValidationPage} from '../pages/validation/validation';
+
 import {NotificationPage} from '../pages/notification/notification';
 import {MessagePage} from '../pages/message/message';
-import {ProfilePage} from '../pages/profile/profile';
+import { ProfilePage } from '../pages/profile/profile';
+
 
 export interface MenuItem {
     title: string;
@@ -47,8 +47,8 @@ export class MyApp {
         ];
 
         this.accountMenuItems = [
-            {title: 'Profile', component: WelcomePage, icon: 'ios-contact'},
-            {title: 'Logout', component: WelcomePage, icon: 'log-out'},
+            {title: 'Profile', component: ProfilePage, icon: 'ios-contact'},
+            {title: 'Logout', component: LoginPage, icon: 'log-out'},
         ];
 
         this.helpMenuItems = [

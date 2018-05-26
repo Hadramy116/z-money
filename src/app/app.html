@@ -2,12 +2,12 @@
 
   <ion-content>
 
-    <img class="menu-logo" src="../assets/img/logo.jpg" />
+    <img class="menu-logo" src="../assets/img/zt.jpg" />
 
     <ion-list>
       <ion-list-header>
         
-      </ion-list-header>
+      </ion-list-header >
       <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">
         <ion-icon item-left [name]="menuItem.icon"></ion-icon>
         {{menuItem.title}}
@@ -39,4 +39,4 @@
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false" hideBackButton="true"></ion-nav>

@@ -20,6 +20,7 @@ import {ValidationPage} from '../pages/validation/validation';
 import {NotificationPage} from '../pages/notification/notification';
 import {MessagePage} from '../pages/message/message';
 import {ProfilePage} from '../pages/profile/profile';
+import { ListPage } from '../pages/list/list';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import {ProfilePage} from '../pages/profile/profile';
     SendMoneyPage,
     LoginPage,
     MapPage,
+    ListPage,
     ValidationPage,
     NotificationPage,
     ProfilePage,
@@ -52,6 +54,7 @@ import {ProfilePage} from '../pages/profile/profile';
     TransfertDetailPage,
     SendMoneyPage,
     LoginPage,
+    ListPage,
     MapPage,
     ValidationPage,   
     NotificationPage,

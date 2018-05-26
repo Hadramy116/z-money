@@ -6,13 +6,20 @@
 -->
 <style type="text/css">
 ::-webkit-input-placeholder{
-  color: white !important;
+  color: rgba(51, 45, 148, 0.726) !important;
 }
 :-moz-placeholder{
-  color:white !important;
+  color:rgb(56, 39, 119)ff !important;
 }
 :-ms-placeholder{
-  color: white !important;
+  color: rgb(96, 43, 146) !important;
+}
+
+.logo{
+  margin-top: 5px;
+  margin-left: 60px;
+  width: 200px;
+  height: 200px;
 }
 </style>
 
@@ -25,7 +32,7 @@
 </ion-header>
 
 
-<ion-content padding style=" background-color:rgb(203, 227, 236) ;background-size:100% 100%">
+<ion-content padding style=" background-color:rgba(252, 252, 253, 0.993) ;background-size:100% 100%">
 
 
 
@@ -34,7 +41,7 @@
   <ion-row>
     <ion-col col-4>
       <ion-col col-4 styl="margin-left:auto ;margin-right :auto;display:block;">
-        <img scr="url('assets/img/b.png')" style="width:100%;height:auto;
+        <img scr="url('assets/img/zt.jpg')" style="width:100%;height:auto;
         border-radius:100%"> 
       </ion-col>
       <ion-col col-4></ion-col>
@@ -48,15 +55,19 @@
     <ion-slides>
 
         <ion-slide>
-            <ion-list   >
+            <ion-list  tyle=" background-color:rgba(84, 53, 156, 0.993) ;background-size:100% 100%" >
+                  <ion-item class="item"style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">
+                      
+                   <img class="logo" src="../assets/img/zt.jpg" />
+                  </ion-item>
                     <ion-item class="item"style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">
                       
-                      <ion-input type="email"  placeholder="Email"></ion-input>
+                      <ion-input type="email" [(ngModel)]="username" name="username" placeholder="Email"></ion-input>
                     </ion-item>
                     
                     <ion-item class="item" style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">
                       
-                      <ion-input type="password" placeholder="password"></ion-input>
+                      <ion-input type="password" [(ngModel)]="password" name="pass"  placeholder="password"></ion-input>
                     </ion-item>      
                   
                     <ion-row>
@@ -75,8 +86,8 @@
           <button ion-fab color="primary" ><ion-icon name="add"></ion-icon></button>
           
           <ion-fab-list side="top" >
-            <button ion-fab><ion-icon name="md-map"></ion-icon></button>
-            <button ion-fab ><ion-icon name="md-mail"></ion-icon></button>
+            <button ion-fab (click)="map()"><ion-icon name="md-map"></ion-icon></button>
+            <button ion-fab (click)="contact()" ><ion-icon name="md-mail"></ion-icon></button>
             
           </ion-fab-list>
         </ion-fab>
