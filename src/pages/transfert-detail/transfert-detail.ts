@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {ActionSheetController, ActionSheet, NavController, NavParams, ToastController} from 'ionic-angular';
 import { TransfertService } from '../../providers/transfert-service-mock';
+import { ValidationListPage } from '../validation-list/validation-list';
 
 @Component({
     selector: 'page-transfert-detail',
@@ -22,12 +23,13 @@ export class TransfertDetailPage {
         this.propertyService.favorite(property)
             .then(property => {
                 let toast = this.toastCtrl.create({
-                    message: 'Property added to your favorites',
+                    message: 'Ajouter a la list des transcaction valide',
                     cssClass: 'mytoast',
-                    duration: 1000
+                    duration: 3000
                 });
                 toast.present(toast);
             });
+        this.navCtrl.push(ValidationListPage)
     }
 
     share(property) {

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
+import { TransfertService } from '../../providers/transfert-service-mock';
 
 
 /**
@@ -14,11 +15,39 @@ import { NavController, NavParams, AlertController } from 'ionic-angular';
 })
 export class SendMoneyPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
+  item: any;
+  private num_client:string;
+  private num_receiver:string;
+  private montant:string;
+  private description:string;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, private service: TransfertService) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SendMoneyPage');
+   
+  }
+
+  addToListTransfer(){
+    
+    this.item = {
+      id: this.service.getTaille() +1 ,
+      address: "l'adresse du client",
+      city: "NKTT",
+      state: "MA",
+      zip: "01742",
+      price: this.montant,
+      title: this.num_client+" vers "+this.num_receiver,
+      picture: "./assets/img/i-money.jpg",
+      thumbnail:  "./assets/img/i-money.jpg",
+      tags: "colonial",
+      description: "Lorem ipsum dolor sit amet",
+     
+    }
+    console.log(this.item);
+    this.service.addIhem(this.item);
+    this.presentAlert();
   }
 
   presentAlert() {

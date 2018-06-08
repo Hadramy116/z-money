@@ -40,23 +40,24 @@ export class LoginPage {
   login() {
   
     this.users.forEach(element => {
-      if(element.username == this.username && element.pass == this.password) 
-      this.navCtrl.setRoot(TransfertListPage);
-    else {
-      this.presentAlert()
-    }
+      if(element.username == this.username && element.pass == this.password) {
+         this.navCtrl.setRoot(TransfertListPage);
+      }else {
+       // this.presentAlert()
+        let alert = this.alertCtrl.create({
+          title: '',
+          subTitle: 'email ou mots de passe incorrect !!!',
+          buttons: ['ok']
+        });
+        alert.present();
+        }
 
     });
    
   }
 
   presentAlert() {
-    let alert = this.alertCtrl.create({
-      title: '',
-      subTitle: 'email ou mots de passe incorrect !!!',
-      buttons: ['ok']
-    });
-    alert.present();
+    
   }
 
   map() {

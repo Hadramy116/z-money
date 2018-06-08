@@ -25,22 +25,22 @@
         <ion-list>
            <ion-item>
               <ion-label color="primary">Num de CmptS</ion-label>
-              <ion-input placeholder=" Num de compte sender"></ion-input>
+              <ion-input type="text" [(ngModel)]="num_client" name="num_client" placeholder=" Num de compte sender"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label color="primary">Num de CmptR</ion-label>
-              <ion-input placeholder="Num de compte Receiver "></ion-input>
+              <ion-input type="text" [(ngModel)]="num_receiver"  name="num_receiver" placeholder="Num de compte Receiver "></ion-input>
             </ion-item>
             <ion-item>
               <ion-label color="primary">Montant</ion-label>
-              <ion-input placeholder="montant"></ion-input>
+              <ion-input type="text"  [(ngModel)]="montant" name="montant" placeholder="montant"></ion-input>
             </ion-item>
             <ion-item>
                 <ion-label color="primary">Description</ion-label>
-                <ion-input placeholder="Description"></ion-input>
+                <ion-input type="text"  [(ngModel)]="description" name="description" placeholder="Description"></ion-input>
               </ion-item>
             <ion-item>
-                <button ion-button round (click)="presentAlert()"><ion-icon name="md-paper-plane" ></ion-icon></button>
+                <button type="submit" round (click)="addToListTransfer()"><ion-icon name="md-paper-plane" ></ion-icon></button>
             </ion-item>
           </ion-list>
       </ion-card>

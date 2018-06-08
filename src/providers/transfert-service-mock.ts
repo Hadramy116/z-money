@@ -11,6 +11,10 @@ export class TransfertService {
     properties.push(property);
   }
 
+  getTaille(){
+    return properties.length;
+  }
+
   findAll() {
     return Promise.resolve(properties);
   }
